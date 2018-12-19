@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8"); 
 
-$cPhoto_one=$_POST['bc01'];
+$cPhoto_one=$_GET['bc01'];
 echo "$cPhoto";
 ?>
 
