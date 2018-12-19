@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="script.js"></script>
+		<script>
+			document.write(storage.item);
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -26,21 +29,25 @@
 			<!-- One -->
 
 
-			<section id="one" class="main special">
+			<section id="three" class="main special">
 				<div class="container">
-				<a href="index3.html" target="_self" id="choice03" onclick= "savePhotoName(1,3);">
-					<span class="image fit primary">
-						<img id = "img03">
-							<script>
-								document.getElementById('img03').src=photo[2];
-							</script>
-						</a>
-					</span>
+						<a href="index3.html" target="_self" id="choice01">
+								<script>
+									document.getElementById('img03').onclick=savePhotoName(1,2);
+									storage.setItem('two',photo[2]);
+								</script>
+								<span class="image fit primary">
+									<img id = "img03">
+										<script>
+											document.getElementById('img03').src=choicePhoto[0];
+										</script>
+									</a>
+							</span>
 				<div class="content">
 					<header class="major">
 							<h2>
 								<script>
-									document.write(title[2])
+									document.write(choiceTitle[0])
 								</script>
 							</h2>
 					</header>
